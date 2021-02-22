@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  background: $color-background;
+  color: $color-gray;
+  font-size: calc(100vw / 1920 * 10);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  user-select: none;
+  width: 100%;
+}
+
+body {
+  font-family: 'halyard-display', sans-serif;
+  font-size: 15px;
+  margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior-y: none;
+
+  .loaded &:after {
+    opacity: 0.06;
+  }
+}
+
+body #cdawrap {
+  --cda-bottom: 3rem;
+  --cda-left: 3rem;
+  --cda-width: 400px;
+  --cda-footer-fontsize: initial;
+  --cda-footer-color: rgba(255,255,255,0.5);
+}
+
+body #cdawrap a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+img {
+  display: block;
+}
+
+canvas {
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  transition: opacity 1s ease;
+  width: 100%;
+
+  .loaded & {
+    opacity: 1
+  }
+}
+
+a {
+  @extend %link--hidden;
+
+  color: $color-gray;
+  outline: none;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
