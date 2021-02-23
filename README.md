@@ -4,7 +4,7 @@ A tutorial explaining how to build an infinite circular gallery using WebGL with
 
 ![Final Result](cover.jpg)
 
-[Article on Codrops](https://tympanus.net/codrops/?p=52634)
+[Article on Codrops](https://tympanus.net/codrops/?p=53491)
 
 [Demo](https://codrops.com/Tutorials/InfiniteCircularGallery/)
 

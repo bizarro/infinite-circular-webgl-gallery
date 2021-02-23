@@ -34,19 +34,6 @@ body {
   }
 }
 
-body #cdawrap {
-  --cda-bottom: 3rem;
-  --cda-left: 3rem;
-  --cda-width: 400px;
-  --cda-footer-fontsize: initial;
-  --cda-footer-color: rgba(255,255,255,0.5);
-}
-
-body #cdawrap a:hover {
-  text-decoration: none;
-  opacity: 0.7;
-}
-
 img {
   display: block;
 }
